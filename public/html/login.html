@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #errorMessage {
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/login" id="loginForm" method="post">
+        <div class="logpage">
+            <h2>LOGIN PAGE</h2>
+            
+            <div class="input">
+                <div id="user">
+                    <i class="fa fa-user"></i>
+                    <input type="email" name="email" id="userinput" placeholder="Email" required>
+                </div>
+                <div id="lock">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" name="password" id="userlock" placeholder="Password" required>
+                </div>
+            </div>
+            <div class="loginbtn">
+                <button type="submit">Login</button>
+            </div>
+            <div class="register">
+                <p>Don't have an account? <a href="register.html" id="register-link">Register here</a></p>
+            </div>
+            <p id="errorMessage"></p> <!-- Error message display -->
+        </div>
+    </form>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const formData = new FormData(this);
+
+            fetch('/login', {
+                method: 'POST',
+                body: new URLSearchParams(formData),
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    window.location.href = '/index.html';
+                } else {
+                    return response.text(); // Extract error message from response
+                }
+            })
+            .then(errorText => {
+                if (errorText) {
+                    document.getElementById('errorMessage').textContent = errorText;
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                document.getElementById('errorMessage').textContent = 'An error occurred. Please try again.';
+            });
+        });
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Simple validation (replace with actual authentication logic)
+            if (username === 'user' && password === 'password') {
+                // Set login status in localStorage (or use session management)
+                localStorage.setItem('loggedIn', 'true');
+                window.location.href = 'diet_plan.html'; // Redirect to diet plan page
+            } else {
+                alert('Invalid login credentials');
+            }
+        });
+    </script>
+</body>
+</html>

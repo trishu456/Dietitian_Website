@@ -1,0 +1,34 @@
+{
+    "heart": [
+        {
+            "Sn": 1,
+            "Item": "Oily Fish",
+            "Value": "Rich in omega-3 fatty acids, supports heart health",
+            "RecommendedFood": ["Salmon", "Mackerel"]
+        },
+        {
+            "Sn": 2,
+            "Item": "Whole Grains",
+            "Value": "High in fiber, helps reduce cholesterol levels",
+            "RecommendedFood": ["Oats", "Barley"]
+        },
+        {
+            "Sn": 3,
+            "Item": "Nuts and Seeds",
+            "Value": "Contains healthy fats and antioxidants, supports cardiovascular health",
+            "RecommendedFood": ["Walnuts", "Flaxseeds"]
+        },
+        {
+            "Sn": 4,
+            "Item": "Fruits",
+            "Value": "Rich in vitamins and antioxidants, helps reduce blood pressure",
+            "RecommendedFood": ["Oranges", "Apples"]
+        },
+        {
+            "Sn": 5,
+            "Item": "Legumes",
+            "Value": "High in protein and fiber, helps manage blood pressure and cholesterol",
+            "RecommendedFood": ["Beans", "Lentils"]
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+  "mealPlans": [
+      {
+          "day": 1,
+          "breakfast": ["Oatmeal with berries", "Tofu scramble"],
+          "lunch": ["Vegetable soup", "Whole wheat sandwich with hummus"],
+          "dinner": ["Lentil stew", "Quinoa salad"]
+      },
+      {
+          "day": 2,
+          "breakfast": ["Smoothie with spinach and fruits", "Tofu scramble"],
+          "lunch": ["Vegetarian chili", "Brown rice with beans and vegetables"],
+          "dinner": ["Lentil curry", "Black bean burgers"]
+      },
+      {
+          "day": 3,
+          "breakfast": ["Scrambled eggs", "Yogurt with granola"],
+          "lunch": ["Chicken salad sandwich", "Tuna salad sandwich"],
+          "dinner": ["Chicken stir-fry", "Spaghetti with meat sauce"]
+      },
+      {
+          "day": 4,
+          "breakfast": ["Greek yogurt with fruit and nuts", "Eggs with whole wheat toast"],
+          "lunch": ["Salmon with quinoa", "Grilled chicken with vegetables"],
+          "dinner": ["Beef stew", "Shrimp scampi"]
+      },
+      {
+          "day": 5,
+          "breakfast": ["Chia pudding with almond milk and fruit", "Avocado toast"],
+          "lunch": ["Vegan Buddha bowl with quinoa and mixed vegetables", "Sweet potato and black bean tacos"],
+          "dinner": ["Vegan lentil shepherd's pie", "Stuffed bell peppers with rice and beans"]
+      },
+      {
+          "day": 6,
+          "breakfast": ["Smoothie bowl with almond butter and fruit", "Vegan banana pancakes"],
+          "lunch": ["Vegan sushi rolls with avocado and cucumber", "Roasted vegetable and hummus wrap"],
+          "dinner": ["Vegan Thai curry with tofu and vegetables", "Chickpea and spinach stew"]
+      },
+      {
+          "day": 7,
+          "breakfast": ["Tofu and vegetable breakfast burrito", "Fruit salad with nuts"],
+          "lunch": ["Vegan lentil and vegetable soup", "Quinoa and black bean salad"],
+          "dinner": ["Vegan pizza with veggie toppings", "Stuffed mushrooms with spinach and nuts"]
+      },
+      {
+          "day": 8,
+          "breakfast": ["Berry smoothie with flax seeds", "Avocado toast with cherry tomatoes"],
+          "lunch": ["Vegan pad Thai with tofu", "Chickpea and cucumber salad"],
+          "dinner": ["Vegan mushroom risotto", "Vegetable and tofu stir-fry"]
+      },
+      {
+          "day": 9,
+          "breakfast": ["Overnight oats with almond milk and fruit", "Vegan breakfast burrito"],
+          "lunch": ["Pescatarian sushi rolls with salmon and avocado", "Mediterranean quinoa salad"],
+          "dinner": ["Grilled salmon with asparagus and sweet potatoes", "Seafood paella with shrimp and mussels"]
+      },
+      {
+          "day": 10,
+          "breakfast": ["Smoothie with kale and berries", "Pancakes with maple syrup"],
+          "lunch": ["Tuna poke bowl with brown rice", "Seafood and vegetable stew"],
+          "dinner": ["Grilled shrimp tacos with slaw", "Baked cod with lemon and herbs"]
+      }
+  ]
+}

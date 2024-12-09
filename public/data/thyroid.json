@@ -1,0 +1,34 @@
+{
+    "thyroid": [
+        {
+            "Sn": 1,
+            "Item": "Leafy Greens",
+            "Value": "High in iodine",
+            "RecommendedFood": ["Spinach", "Kale"]
+        },
+        {
+            "Sn": 2,
+            "Item": "Seafood",
+            "Value": "Rich in iodine and selenium",
+            "RecommendedFood": ["Salmon", "Shrimp"]
+        },
+        {
+            "Sn": 3,
+            "Item": "Nuts and Seeds",
+            "Value": "Good source of selenium",
+            "RecommendedFood": ["Brazil Nuts", "Sunflower Seeds"]
+        },
+        {
+            "Sn": 4,
+            "Item": "Fruits",
+            "Value": "Antioxidants",
+            "RecommendedFood": ["Blueberries", "Apples"]
+        },
+        {
+            "Sn": 5,
+            "Item": "Whole Grains",
+            "Value": "Rich in fiber",
+            "RecommendedFood": ["Quinoa", "Brown Rice"]
+        }
+    ]
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dietitian Website</title>
+    <!-- CSS file Link here -->
+    <link rel="stylesheet" href="css/style.css">
+     <!--Javascript file  Link here -->
+     <link rel="" href="/javascript/script.js">
+    <!-- Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Icon Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+</head>
+<body>
+    <!-- Header Section -->
+    <nav class="navbar">
+        <ul class="nav-list">
+            <div class="logo">
+                <img src="/images/logo.jpg" alt="img">
+                <h4>iet</h4>
+            </div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a>Service &#9662;</a>
+                <ul class="dropdown-content">
+                    <li><a href="diet_plan.html">Personalized Diet Plan</a></li>
+                    <li><a href="weight_management.html">Weight Management</a></li>
+                    <li><a href="disease_specifice.html">Dissease Specifice</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a>FAQ &#9662;</a>
+                <ul class="dropdown-content">
+                    <li><a href="tips.html">Tips</a></li>
+                    <li><a href="facts.html">Facts</a></li>
+                </ul>
+            </li>
+            <li><a href="#review.html">Review</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li class="dropdown">
+                <a>Calculator &#9662;</a>
+                <ul class="dropdown-content">
+                    
+                    <li><a href="bfc.html">Body Fat Calculator</a></li>
+                    <li><a href="bmi.html">Body Mass Index</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="login.html" class="fa fa-user">LogIn &#9662;</a>
+                <ul class="dropdown-content">
+                    <li><a href="#" onclick="logout()">LogOut</a></li>
+                </ul>
+            </li>
+            
+        </ul>
+        
+    </nav>
+    <script>
+        function logout() {
+            // Example: Clear session storage
+            sessionStorage.clear();
+            
+            // Example: Redirect to home page or login page
+            window.location.href = 'login.html'; // Redirect to the login page or another page
+        }
+    </script>
+
+   
+
+    <section class="content" id="content">
+        <h1>Top 10 Tips You Must Follow</h1>
+        <div class="tips-section">
+            <div class="tip">
+                <h3>1. Stay Hydrated</h3>
+                <p>Drinking enough water is essential for overall health. Aim for at least 8 glasses a day to stay hydrated and support bodily functions.</p>
+            </div>
+            <div class="tip">
+                <h3>2. Eat a Balanced Diet</h3>
+                <p>Include a variety of foods in your diet to ensure you get all the necessary nutrients. Incorporate fruits, vegetables, whole grains, and lean proteins.</p>
+            </div>
+            <div class="tip">
+                <h3>3. Avoid Processed Foods</h3>
+                <p>Minimize your intake of processed and sugary foods. They can contribute to weight gain and other health issues.</p>
+            </div>
+            <div class="tip">
+                <h3>4. Control Portion Sizes</h3>
+                <p>Be mindful of portion sizes to avoid overeating. Use smaller plates and listen to your body's hunger cues.</p>
+            </div>
+            <div class="tip">
+                <h3>5. Include Fiber-Rich Foods</h3>
+                <p>Fiber aids in digestion and helps keep you full longer. Include foods like beans, lentils, and whole grains in your diet.</p>
+            </div>
+            <div class="tip">
+                <h3>6. Limit Salt Intake</h3>
+                <p>Excess salt can lead to high blood pressure. Use herbs and spices for flavor instead of salt.</p>
+            </div>
+            <div class="tip">
+                <h3>7. Eat Regular Meals</h3>
+                <p>Don't skip meals. Eating at regular intervals helps maintain stable energy levels and prevents overeating later.</p>
+            </div>
+            <div class="tip">
+                <h3>8. Include Healthy Fats</h3>
+                <p>Incorporate sources of healthy fats such as avocados, nuts, and olive oil for optimal health benefits.</p>
+            </div>
+            <div class="tip">
+                <h3>9. Exercise Regularly</h3>
+                <p>Regular physical activity complements a healthy diet. Aim for at least 150 minutes of moderate exercise per week.</p>
+            </div>
+            <div class="tip">
+                <h3>10. Get Enough Sleep</h3>
+                <p>Quality sleep is crucial for overall health and well-being. Aim for 7-9 hours of sleep each night.</p>
+            </div>
+        </div>
+    </section>
+        <!-- footer section start -->
+        <section class="footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Diet</h3>
+                </div>
+        
+                <div class="footer-section">
+                    <h4>Quick Link</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="">Service</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Calculator</a></li>
+                        
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <!-- <li><a href="review.html">Review</a></li> -->
+                    </ul>
+                </div>
+        
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Phone: 921763800</p>
+                    <p>Email: Diet@gmail.com</p>
+                </div>
+        
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="share">
+                        <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+                        <a href="https://twitter.com" class="fa fa-twitter"></a>
+                        <a href="https://instagram.com" class="fa fa-instagram"></a>
+                        <a href="https://linkedin.com" class="fa fa-linkedin"></a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="credit">Created by <span>Miss Trishu Singh</span> | All rights reserved</div>
+        </section>
+        
+        
+        <!-- footer section end -->
+        
+        <!-- footer section end -->
+</body>
+</html>

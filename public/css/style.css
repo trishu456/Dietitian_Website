@@ -1,0 +1,1504 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    padding:2rem 7%;
+}
+.heading{
+    text-align:center;
+    color: black;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 2rem;
+}
+.heading span{
+    color: var(--black) ;
+    text-transform:uppercase ;
+}
+.logo{
+    width: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logo h4{
+   font-size: 40px;
+   color: rgb(120, 161, 126);
+}
+.logo img{
+    width: 50%;
+    border: 3px solid whitesmoke;
+    border-radius:  0% 100% 100% 0%;
+    float: right; 
+}
+
+.navbar{
+        display: flex;
+        background-color: rgb(204, 212, 210);
+        cursor: pointer;
+        align-content: center;
+        height: 90px;
+        
+        /* position: sticky;
+        top: 0; */
+}
+.nav-list{
+   
+    display:flex;
+    align-items: center;
+    
+   
+}
+.nav-list li{
+    list-style: none;
+    padding: 25px 10px;
+}
+.nav-list li:nth-last-child(1) {
+    margin-left: auto;
+    
+}
+.nav-list .login-link {
+    display: flex;
+    align-items: center;
+}
+
+.login-link .fa {
+    margin-right: 8px;
+}
+
+.nav-list li a{
+    text-decoration: none ;
+    color: black;
+}
+.nav-list li a:hover{
+    color: rgb(48, 170, 170);
+}
+
+  ul li ul.dropdown li{
+    display: block;
+ }
+ ul li ul.dropdown{
+    width: 60px;
+    background: #555;
+    position:absolute;
+    display: none;
+ }
+ ul li:hover ul.dropdown-content{
+    display: block;
+ } 
+body{
+
+    background-size: auto;
+}
+
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown > a {
+    color: black; /* Text color */
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    
+   
+}
+
+.dropdown > a:hover {
+    color: #575757; /* Background color on hover for main dropdown link */
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white; /* Background color of dropdown content */
+    min-width: 160px; /* Adjust width as needed */
+    z-index: 1;
+    border-radius: 20px; /* Optional rounded corners */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Optional shadow effect */
+}
+
+.dropdown-content li {
+    list-style: none;
+    padding: 0;
+}
+
+.dropdown-content li a {
+    color:black; /* Text color in dropdown content */
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+    background-color:white; /* Background color of dropdown items */
+}
+
+.dropdown-content li a:hover {
+    color: rgb(160, 204, 160); /* Green background color on hover */
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Adjust the appearance of dropdown link with icon */
+.dropdown > a.fa {
+    font-size: 18px; /* Adjust icon size as needed */
+}
+.header .search-form label{
+    cursor:pointer;
+    font-size: 2.2rem;
+    margin-right:1.5rem ;
+    color: var(--black);
+}
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../images/veglogin_img.png) no-repeat;
+    background-size: 100% 100%; 
+    background-position: center; 
+    padding: 120px 20px;
+    text-align: left;
+    color: #3e3e3e;
+}
+
+.home .content {
+    max-width: 600px;
+    padding: 20px;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.home h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    font-weight: bold;
+    color: #692121;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1.5s ease-out;
+    animation-delay: 0.5s;
+    animation: fadeInUp 1.5s ease-out;
+    animation-delay: 0.5s; 
+}
+
+.home h2 {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-top: 10px;
+    font-weight: 300;
+    color: #333;
+    animation: fadeInUp 1.5s ease-out;
+    animation-delay: 1s;
+    animation: fadeInUp 1.5s ease-out;
+    animation-delay: 1s;
+}
+
+.get-btn {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #525a7a;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 160px;
+    transition: background-color 0.3s ease;
+}
+
+.get-btn:hover {
+    background-color: #114936;
+}
+/* Animation for the home section content */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home h1 {
+        font-size: 2.5rem;
+    }
+
+    .home h2 {
+        font-size: 1.25rem;
+    }
+
+    .home {
+        padding: 80px 20px;
+    }
+}
+/* about style start */
+.about {
+    padding: 60px 20px;
+    background: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Styling for each content box */
+.content-box {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    flex: 1 1 calc(33.333% - 20px);
+    position: relative;
+}
+
+.content-box:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.content-box h2 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.content-box p {
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.content-box ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.content-box ul li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 20px;
+}
+
+.content-box ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #3498db;
+    font-size: 1.2em;
+}
+
+.content-box ul li strong {
+    color: #2c3e50;
+}
+
+/* Team Gallery */
+.team-gallery {
+    display: flex;
+    gap: 20px;
+}
+
+.team-member {
+    background: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h3 {
+    margin: 10px 0 5px;
+    color: #2c3e50;
+}
+
+.team-member p {
+    color: #666;
+}
+
+.contact-box {
+    margin-top: 40px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-box h2 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.contact-box p {
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .content-box {
+        flex: 1 1 100%;
+    }
+
+    .team-gallery {
+        flex-direction: column;
+    }
+}
+.about-sec {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.about-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.about-heading span {
+    font-weight: bold;
+}
+
+.about-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image {
+    flex: 1;
+    padding: 10px;
+}
+
+.image img {
+    width: 100%;
+    max-width: 300px; 
+    height: auto;
+    border-radius: 8px; 
+}
+
+.content {
+    flex: 2;
+    padding: 10px;
+}
+
+.content h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.content p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-btn {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.about-btn input[type="button"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.about-btn input[type="button"]:hover {
+    background-color: #0056b3; /* Darker shade for hover */
+}
+/* about style end */
+
+/* review style start */
+.review .box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1.5rem;
+}
+
+.review .box {
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    text-align: center;
+}
+.review .box h3{
+    margin-top: 75px;
+}
+
+.review .box .image {
+    height:10rem;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 1rem;
+    
+
+}
+
+.review .box .image img {
+    height: auto;
+    object-fit: cover;
+    width: 15rem;
+    border-radius: 50%;
+   
+}
+
+.review .box .fa-star.checked {
+    font-size: 1.3rem;
+    color: rgb(179, 179, 18);
+    margin: 0.2rem;
+}
+
+.review .box p {
+    font-size: 1.0rem;
+    line-height: 1.0;
+    padding: 2rem 0;
+}
+/* review style ennd */
+
+ /* Contact Section Styles */
+ * Contact Section Styling */
+.contact {
+    padding: 60px 20px;
+    background: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.map {
+    flex: 1;
+    min-width: 300px;
+    height: 300px;
+    border: none;
+    border-radius: 8px;
+}
+
+.contactinput {
+    flex: 1;
+    max-width: 500px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contactinput h5 {
+    margin-bottom: 20px;
+    color: #3498db;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.inputbox {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.inputbox span {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #3498db;
+    font-size: 1.2em;
+}
+
+.inputbox input,
+.inputbox textarea {
+    width: 100%;
+    padding: 10px 15px 10px 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.inputbox input:focus,
+.inputbox textarea:focus {
+    border-color: #3498db;
+}
+
+.inputbox textarea {
+    height: 100px; 
+    resize: vertical; 
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #3498db;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map, .contactinput {
+        max-width: 100%;
+    }
+
+    .map {
+        height: 250px;
+    }
+}
+/* contact style end */
+/* Popup Styles */
+.popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: lightgreen;
+    border: 1px solid green;
+    border-radius: 5px;
+    display: none;
+}
+/* login page style start */
+.logpage{
+        text-align: center;
+        padding: 30px;
+        border: 2px solid rgba(238, 231, 231, 0.87);
+        width: 400px;
+        border-radius: 20px;
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+   
+    }
+    .logpage h2{
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+    
+    .input {
+        padding: 5px;
+    }
+    /* .input i{
+        
+    } */
+    #user{
+        padding: 10px;
+        border-radius: 20px;
+        
+    }
+    #lock{
+        margin-top: 4vh;
+        padding: 10px;
+
+    } 
+    #userinput{
+        padding: 6px;
+        width: 280px;
+        border-radius: 5px;
+    }
+    #userlock{
+        padding: 6px;
+        width: 280px;
+        border-radius: 5px;
+    }
+    #forget{
+        margin-left: 40px;
+    }
+    .loginbtn button{
+        margin-top: 6vh;
+        color:black;
+        padding: 7px;
+        border-radius: 9px;
+        background-color: rgb(160, 204, 160);
+        border-color: rgb(216, 209, 209);
+        font-weight: bold;
+        width: 20vh;
+        cursor: pointer;
+    }
+    .loginbtn button:hover{
+        background-color: #fff;
+    }
+    .logpage a{
+        text-decoration: none;
+        text-align: left;
+    }
+    #backbtn{
+        margin-top: 60px;
+        padding: 10px 9px;
+        width: 140px;
+        border-radius: 10px;
+        color: white;
+        background-color:rgb(160, 204, 160);
+    }
+    .register p{
+        margin-top: 18px;
+    }
+    /* login page style end */
+    /* registration page style start */
+   
+    
+    .rscontainer {
+        text-align: center;
+        padding: 30px;
+        border: 2px solid rgba(238, 231, 231, 0.87);
+        width: 400px;
+        border-radius: 20px;
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    
+    .rscontainer h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: #333;
+    }
+    
+    .form-group {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    
+    .form-group label {
+        display: block;
+        font-size: 14px;
+        margin-bottom: 5px;
+        color: #333;
+    }
+    
+    .form-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+    
+    button[type="submit"] {
+        margin-top: 20px;
+        padding: 10px 20px;
+        border-radius: 9px;
+        background-color: rgb(160, 204, 160);
+        border: none;
+        font-weight: bold;
+        color: #333;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    button[type="submit"]:hover {
+        background-color: #ffffff;
+        border: 1px solid rgb(160, 204, 160);
+    }
+    
+    @media (max-width: 768px) {
+        .rscontainer {
+            width: 90%;
+            margin-top: 5vh;
+        }
+    }
+    
+    /* registration page style end */
+
+    /* diet chart start */
+
+    .diet-chart {
+        padding: 10px;
+        /* background-color: #E6F4EA; */
+    }
+    
+    .diet-chart .heading {
+        font-size: 2em;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .diet-chart .box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2em;
+        justify-content:space-evenly;
+    }
+    
+    .diet-chart .box {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        overflow: hidden;
+        transition: transform 0.3s;
+        text-align: center;
+    }
+    
+    .diet-chart .box:hover {
+        transform: scale(1.03);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    
+    }
+
+    .diet-chart .box h3{
+        padding-top: 10px;
+        margin: 10px;
+    }
+    
+    .diet-chart .box .image {
+        height: 180px;
+        width: 200px;
+        overflow: hidden;
+        position: relative;
+        padding-bottom: 0%;
+    }
+    
+    .diet-chart .box .image img {
+        height: 100%;
+        /* width: 100%; */
+        object-fit: cover;
+        transition: transform 0.3s;
+        
+    }
+    
+    .diet-chart .box:hover .image img {
+        transform: scale(1.2);
+    }
+    
+    .diet-chart .box h3 {
+        margin: 10px 0;
+    }
+    
+    .diet-btn  {
+        display: inline-block;
+        /* padding: 10px 20px; */
+        width:90px;
+        font-size: 12px;
+        height: 35px;
+        margin: 10px 0;
+        background: #333;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-bottom: 30px;
+        /* transition: background 0.3s; */
+    }
+    
+    .diet-chart .btn:hover {
+        background: #555;
+        color: white;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+    .diet-chart .btn:active {
+        background: #ffffff;
+        color: black;
+        
+    }
+    
+    
+    .diet-chart .box .image button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .hidden {
+        display: none;
+    }
+    
+    /* diet chart table start */
+    .diet-chart-tb {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    .diet-chart-tb th,
+    .diet-chart-tb td {
+        padding: 12px;
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+    
+    .diet-chart-tb th {
+        background-color: #f4f4f4;
+        color: #333;
+    }
+    
+    .diet-chart-tb tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+    
+    .diet-chart-tb tbody tr:hover {
+        background-color: #f1f1f1;
+    }
+    
+     /* diet chart table end */
+    /* diet chart end */
+    /* facts style start */
+    .facts-taboo-section {
+        padding: 30px;
+       
+        color: #333;
+        /* font-family: Arial, sans-serif; */
+    }
+    .facts-taboo-section h2 {
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 20px;
+        color: #00796b;
+    }
+    .fact-taboo-item {
+        margin-bottom: 25px;
+        background-color: #fff;
+        border: 1px solid #00796b;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .fact-taboo-item h3 {
+        font-size: 22px;
+        margin-bottom: 10px;
+        color: #004d40;
+    }
+    .fact-taboo-item p {
+        margin: 5px 0;
+        line-height: 1.6;
+        color: #555;
+    }
+    .fact-taboo-item i {
+        color: #00796b;
+        margin-right: 10px;
+    }
+      /* facts style end */
+      /* tip style start */
+      .content {
+        padding: 50px;
+       
+    }
+
+    .content h1 {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 40px;
+        color: #333;
+    }
+
+    .tips-section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .tip {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        transition: transform 0.3s, box-shadow 0.3s;
+        text-align: center;
+    }
+
+    .tip h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: #4caf50;
+    }
+
+    .tip p {
+        color: #666;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .tip:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .tip::before {
+        content: "\f058";
+        font-family: 'Font Awesome 5 Free'; 
+        font-weight: 900;
+        font-size: 30px;
+        color: #4caf50;
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+      /* tip style end */
+      /* footer start */
+.footer {
+    background-color: #d6c4c4;
+
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #702626;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.share a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.share a:hover {
+    color: #007bff;
+}
+
+.credit {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
+/* 
+footer end */
+/* diet_plan start */
+/* General form styling */
+form label, 
+form input[type="text"], 
+form input[type="number"], 
+form select {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 300px; /* Control the width of the form elements */
+}
+
+/* Checkboxes and labels styling */
+form input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+    margin-right: 10px;
+}
+
+form label.checkbox-label {
+    display: inline-block;
+    margin-bottom: 10px;
+    vertical-align: middle;
+    font-weight: normal;
+}
+
+/* Align the section headers */
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Align the entire form to the center */
+form {
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+
+
+
+/* bfc style start */
+.bfc-container {
+    max-width: 400px;
+    margin: 0 auto;
+    /* background: #fff; */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* background: url(../images/wm_back.jpg) no-repeat; */
+    background-size: 100% 100%; 
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+.result {
+    margin-top: 20px;
+    text-align: center;
+}
+/* bfc style end */
+/* customized diet style start */
+.meal-plan-container {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+.meal-plan-container h2{
+    margin-top: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.info-btn {
+    background-color: rgb(160, 204, 160);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.info-btn:hover {
+    background-color: hsl(216, 2%, 57%);
+}
+
+.preferences {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.preference-option {
+    background-color: #eff2f8;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.preference-option img {
+    max-width: 50px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.age-input {
+    margin-top: 20px;
+}
+
+.age-input input {
+    padding: 10px;
+    margin: 5px;
+    width: 60px;
+    
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.submit-btn {
+    background-color: rgb(99, 128, 99);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: rgb(160, 204, 160);
+}
+
+.meal-plan-display {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.meal-section {
+    margin-bottom: 20px;
+}
+
+.meal-row {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping if items overflow */
+    gap: 10px; /* Space between items */
+    justify-content: space-around; /* Space items evenly */
+}
+
+.food-item {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Allow items to grow equally */
+    max-width: 150px; /* Limit max width for better control */
+    text-align: center;
+}
+/* calorie style end */
+/* bfc style start */
+.bfc-container {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top:50px ;
+    margin-bottom: 50px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.bfc-container label{
+    font-weight: bold;
+}
+
+.bfc-container h1 {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+.result {
+    margin-top: 20px;
+    text-align: center;
+}
+/* bfc style end */
+/* customized diet style start */
+.meal-plan-container {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+
+h1 {
+    color: #333;
+}
+
+.info-btn {
+    background-color: rgb(160, 204, 160);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.info-btn:hover {
+    background-color: hsl(216, 2%, 57%);
+}
+
+.preferences {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.preference-option {
+    background-color: #eff2f8;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.preference-option img {
+    max-width: 50px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.age-input {
+    margin-top: 20px;
+}
+
+.age-input input {
+    padding: 10px;
+    margin: 5px;
+    width: 100px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.submit-btn {
+    background-color: rgb(99, 128, 99);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: rgb(160, 204, 160);
+}
+
+.meal-plan-display {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.meal-section {
+    margin-bottom: 20px;
+}
+
+.meal-row {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping if items overflow */
+    gap: 10px; /* Space between items */
+    justify-content: space-around; /* Space items evenly */
+}
+
+.food-item {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Allow items to grow equally */
+    max-width: 150px; /* Limit max width for better control */
+    text-align: center;
+}
+/* customized diet style end  */
+/* bmi style start */
+.bmicontainer {
+    max-width: 500px;
+    margin:50px auto;
+    margin-top:50px ;
+    margin-bottom: 50px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.bmicontainer label{
+    font-weight: bold;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#calculateButton {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#calculateButton:hover {
+    background-color: #218838;
+}
+
+#bmiPieChart {
+    margin-top: 30px;
+    max-width: 400px;
+    margin: auto;
+}
+
+/* bmi style end */
+/* weight management style start */
+.weight-container{
+    max-width: 500px;
+    margin: 50px auto;
+    margin-top:50px ;
+    margin-bottom: 50px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.weight-container h1{
+    margin-bottom: 45px;
+}
+.weight-container label{
+    font-weight: bold;
+}
+
+
+/* weight management style start */

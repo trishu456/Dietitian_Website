@@ -1,0 +1,126 @@
+{
+    "mealPlans": {
+      "weightGain": {
+        "breakfast": {
+          "name": "Protein-Packed Smoothie",
+          "ingredients": [
+            {"item": "Banana", "quantity": "1 medium", "carbs": 27, "protein": 1, "fats": 0},
+            {"item": "Greek Yogurt", "quantity": "1 cup", "carbs": 10, "protein": 20, "fats": 0},
+            {"item": "Protein Powder", "quantity": "1 scoop", "carbs": 3, "protein": 25, "fats": 1}
+          ],
+          "totalNutrients": {
+            "carbs": 40,
+            "protein": 46,
+            "fats": 1
+          }
+        },
+        "lunch": {
+          "name": "Chicken and Quinoa Bowl",
+          "ingredients": [
+            {"item": "Grilled Chicken Breast", "quantity": "6 oz", "carbs": 0, "protein": 42, "fats": 3},
+            {"item": "Quinoa", "quantity": "1 cup cooked", "carbs": 39, "protein": 8, "fats": 3.5},
+            {"item": "Steamed Broccoli", "quantity": "1 cup", "carbs": 6, "protein": 3, "fats": 0.5}
+          ],
+          "totalNutrients": {
+            "carbs": 45,
+            "protein": 53,
+            "fats": 7
+          }
+        },
+        "dinner": {
+          "name": "Salmon with Sweet Potato",
+          "ingredients": [
+            {"item": "Salmon Fillet", "quantity": "6 oz", "carbs": 0, "protein": 40, "fats": 20},
+            {"item": "Sweet Potato", "quantity": "1 medium", "carbs": 26, "protein": 2, "fats": 0.1}
+          ],
+          "totalNutrients": {
+            "carbs": 26,
+            "protein": 42,
+            "fats": 20.1
+          }
+        }
+      },
+      "weightLoss": {
+        "breakfast": {
+          "name": "Veggie Omelette",
+          "ingredients": [
+            {"item": "Egg Whites", "quantity": "4", "carbs": 0, "protein": 14, "fats": 0},
+            {"item": "Spinach", "quantity": "1 cup", "carbs": 1, "protein": 1, "fats": 0},
+            {"item": "Tomato", "quantity": "1 medium", "carbs": 5, "protein": 1, "fats": 0}
+          ],
+          "totalNutrients": {
+            "carbs": 6,
+            "protein": 16,
+            "fats": 0
+          }
+        },
+        "lunch": {
+          "name": "Turkey Salad",
+          "ingredients": [
+            {"item": "Turkey Breast", "quantity": "4 oz", "carbs": 0, "protein": 30, "fats": 1},
+            {"item": "Mixed Greens", "quantity": "2 cups", "carbs": 3, "protein": 1, "fats": 0},
+            {"item": "Olive Oil (for dressing)", "quantity": "1 tablespoon", "carbs": 0, "protein": 0, "fats": 14}
+          ],
+          "totalNutrients": {
+            "carbs": 3,
+            "protein": 31,
+            "fats": 15
+          }
+        },
+        "dinner": {
+          "name": "Baked Cod with Asparagus",
+          "ingredients": [
+            {"item": "Baked Cod", "quantity": "6 oz", "carbs": 0, "protein": 36, "fats": 1},
+            {"item": "Asparagus", "quantity": "1 cup", "carbs": 5, "protein": 3, "fats": 0}
+          ],
+          "totalNutrients": {
+            "carbs": 5,
+            "protein": 39,
+            "fats": 1
+          }
+        }
+      },
+      "maintainWeight": {
+        "breakfast": {
+          "name": "Avocado Toast with Egg",
+          "ingredients": [
+            {"item": "Whole Grain Bread", "quantity": "1 slice", "carbs": 15, "protein": 4, "fats": 1},
+            {"item": "Avocado", "quantity": "1/2 fruit", "carbs": 12, "protein": 1, "fats": 15},
+            {"item": "Egg", "quantity": "1", "carbs": 0, "protein": 6, "fats": 5}
+          ],
+          "totalNutrients": {
+            "carbs": 27,
+            "protein": 11,
+            "fats": 21
+          }
+        },
+        "lunch": {
+          "name": "Chicken Wrap",
+          "ingredients": [
+            {"item": "Whole Wheat Wrap", "quantity": "1", "carbs": 25, "protein": 6, "fats": 3},
+            {"item": "Grilled Chicken", "quantity": "3 oz", "carbs": 0, "protein": 25, "fats": 2},
+            {"item": "Mixed Vegetables", "quantity": "1/2 cup", "carbs": 7, "protein": 2, "fats": 0}
+          ],
+          "totalNutrients": {
+            "carbs": 32,
+            "protein": 33,
+            "fats": 5
+          }
+        },
+        "dinner": {
+          "name": "Beef Stir-Fry",
+          "ingredients": [
+            {"item": "Beef Sirloin", "quantity": "4 oz", "carbs": 0, "protein": 28, "fats": 7},
+            {"item": "Mixed Vegetables", "quantity": "1 cup", "carbs": 10, "protein": 2, "fats": 0},
+            {"item": "Brown Rice", "quantity": "1/2 cup cooked", "carbs": 22, "protein": 2, "fats": 0.5}
+          ],
+          "totalNutrients": {
+            "carbs": 32,
+            "protein": 32,
+            "fats": 7.5
+          }
+        }
+      }
+    }
+  }
+  
